@@ -9,7 +9,7 @@ npm init -y
 Add dependencies
 
 ```js
-npm install prisma typescript express ts-node @types/node @types/express --save-dev
+npm install prisma typescript express cors ts-node @types/node @types/express @types/cors --save-dev
 ```
 
 Initialize typescript

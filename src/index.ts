@@ -1,9 +1,11 @@
 import express, { Express, Request, Response } from "express";
 import todoRoutes from "./routes/todoRoutes";
 import userRoutes from "./routes/userRoutes";
+import cors from "cors";
 
 const app: Express = express();
 
+app.use(cors());
 app.use(express.json());
 app.use("/todo", todoRoutes);
 app.use("/user", userRoutes);
